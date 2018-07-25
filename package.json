@@ -1,0 +1,34 @@
+{
+  "name": "egg-dome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "egg-bin dev  --port=3000",
+    "start": "egg-scripts start --port=3000 --daemon --title=egg-server-showcase",
+    "start1": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "await-stream-ready": "^1.0.1",
+    "captchapng": "^0.0.1",
+    "crypto": "^1.0.1",
+    "egg": "^2.0.0",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^1.0.2",
+    "egg-scripts": "^2.6.0",
+    "egg-sequelize": "^3.1.2",
+    "egg-session": "^3.0.0",
+    "egg-session-redis": "^1.0.0",
+    "egg-validate": "^1.0.0",
+    "egg-view-nunjucks": "^2.1.4",
+    "nodemailer": "^4.4.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "stream-wormhole": "^1.0.3"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.3.6"
+  }
+}
