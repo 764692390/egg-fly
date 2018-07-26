@@ -24,6 +24,7 @@
     "egg-session-redis": "^1.0.0",
     "egg-validate": "^1.0.0",
     "egg-view-nunjucks": "^2.1.4",
+    "mysql2": "^1.5.3",
     "nodemailer": "^4.4.1",
     "nodemailer-smtp-transport": "^2.7.4",
     "stream-wormhole": "^1.0.3"

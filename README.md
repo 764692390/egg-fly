@@ -6,7 +6,7 @@
 
 2. 修改本地host   127.0.0.1:3000  bbs.jczxw.cn
 
-3. 本项目用到Mysq 和 Readis 
+3. 本项目用到Mysql 和 Readis 
 
 4. npm start 启动项目
 
