@@ -113,7 +113,7 @@ exports.Mail = function(userEmail,codeEmail){
         port: 465, // SMTP 端口
         auth: {
             user: "Administrator@jczxw.cn", // 账号
-            pass: "Qq13718439536" // 密码
+            pass: "xxxxxxxxxxxx" // 密码
         }
     }));
     // 设置邮件内容
