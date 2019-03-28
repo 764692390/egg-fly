@@ -17,7 +17,7 @@
 
 <div class="layui-container">
   <div class="layui-row layui-col-space15">
-    <div class="layui-col-md12">
+    <div class="layui-col-md8">
       <div class="fly-panel" style="margin-bottom: 0;">
        
         <ul class="fly-list">
@@ -73,6 +73,58 @@
         
         <div id="page-box" data-url="/column/all/page/" style="border-top: 1px dotted #e2e2e2; text-align: center;padding: 10px 0;">
         </div>
+      </div>
+    </div>
+    <div class="layui-col-md4">
+      {% include 'common/list-static.tpl' %}
+      {# <div class="fly-panel fly-signin">
+        <div class="fly-panel-title">
+          签到
+          <i class="fly-mid"></i> 
+          <a href="javascript:;" class="fly-link" id="LAY_signinHelp">说明</a>
+          <i class="fly-mid"></i> 
+          <a href="javascript:;" class="fly-link" id="LAY_signinTop">活跃榜<span class="layui-badge-dot"></span></a>
+          <span class="fly-signin-days"></span>
+        </div>
+        <div class="fly-panel-main fly-signin-main">
+          {% if user.id %}
+          <i class="layui-icon fly-loading">&#xe63d;</i>
+          {% else %}
+            <button class="layui-btn layui-btn-danger" id="LAY_signin">今日签到</button>
+          {% endif%}
+        </div>
+      </div> #}
+      {# {{ include ad/all }} #}
+      <div class="fly-panel fly-rank fly-rank-reply" id="LAY_replyRank">
+        <h3 class="fly-panel-title">回贴榜</h3>
+        <dl>
+          {% for item in hotReply.rows %}
+          <dd>
+            <a href="javascript:;">
+              {% if item.type === '0' %}
+                <img src="{{ BaseUrl.CDN }}{{item.pic}}">
+              {% else %}
+                <img src="{{item.pic}}">
+              {%endif%}
+              <cite>{{item.username}}</cite>
+              <i>{{item.reply+'次回答'}}</i>
+            </a>
+          </dd>
+          {% endfor %}
+        </dl>
+      </div>
+      {% include "common/list-hot.tpl" %}
+      {# {{ include ad/ours }} #}
+      {# <div class="fly-panel" style="padding: 20px 0; text-align: center;">
+        <img src="{{BaseUrl.CDN}}/images/weixin.jpg" style="max-width: 100%;" alt="layui">
+        <p style="position: relative; color: #666;">微信扫码关注 layui 公众号</p>
+      </div> #}
+      <div class="fly-panel fly-link">
+        <h3 class="fly-panel-title">友情链接</h3>
+        <dl class="fly-panel-main">
+          <dd><a href="http://layim.layui.com/" target="_blank">WebIM</a><dd>
+          <dd><a href="mailto:Administrator@jczxw.cn?subject=申请Egg社区友链" class="fly-link">申请友链</a><dd>
+        </dl>
       </div>
     </div>
   </div>

@@ -1,10 +1,10 @@
 
 <div class="fly-footer">
-  <p><a href="https://bbs.jczxw.cn/">Egg社区</a> 2018 &copy; <a href="https://bbs.jczxw.cn/">bbs.jczxw.cn</a></p>
-  <p class="fly-union"> 
+  <p><a href="https://bbs.jczxw.cn/">Egg社区</a> {{lay.fullYear}} &copy; <a href="https://bbs.jczxw.cn/">bbs.jczxw.cn</a></p>
+  <!-- <p class="fly-union"> 
     <a href="https://www.upyun.com?from=jczxw" target="_blank" rel="nofollow" upyun=""><img src="{{ BaseUrl.CDN }}/images/other/upyun.png?t=1"></a>
     <span>提供 CDN 赞助</span> 
-  </p>
+  </p> -->
 </div>
 <script>
 var _hmt = _hmt || [];

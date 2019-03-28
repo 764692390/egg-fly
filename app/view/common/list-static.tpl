@@ -10,13 +10,8 @@
       </a>
     </li>
     <li>
-      <a href="http://lz.jczxw.cn/admin" target="_blank">
-        关于Egg社区后台
-      </a>
-    </li>
-    <li>
       <a name="signin"></a>
-      <a href="http://test.jczxw.cn" target="_blank">
+      <a href="https://bbs.jczxw.cn" target="_blank">
         Egg社区 
       </a>
     </li>
