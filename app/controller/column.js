@@ -7,6 +7,7 @@ class ColumnController extends Controller {
       await this.ctx.render('404.tpl');
       return false;
     }
+
     let index = Math.floor(this.ctx.params.index) || 1;
 
     this.ctx.locals.lay.base = {
@@ -22,9 +23,6 @@ class ColumnController extends Controller {
     /*提问*/
     const page = await this.ctx.service.jie.page(index);
     this.ctx.locals.pages = page;
-
-    /*提问*/
-    this.ctx.locals.pages = await this.ctx.service.jie.page(1);
 
     // /*置顶*/
     this.ctx.locals.pages3 = await this.ctx.model.Jie.findJie3();
